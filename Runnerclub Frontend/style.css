@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+    
+}
+a{
+    text-decoration: none;
+    color: tomato;
+}
+footer a{
+    text-decoration: none;
+    color: tomato;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: 0em;
+    line-height: 1.7em;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.social img{
+    width: 15%;
+    aspect-ratio: 6/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+.image_container{
+    display: none;
+    max-width: 100%;
+    max-height: 100vh;
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+.slide_images{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    
+}
+/* Fading animation */
+.fade {
+    animation-name:fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+.header{
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 10/2;
+}
+
+.links{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30%;
+}
+.social{
+    text-align: center;
+    margin-top: 40%;
+}
